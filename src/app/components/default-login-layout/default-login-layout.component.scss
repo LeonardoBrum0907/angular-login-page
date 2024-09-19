@@ -12,7 +12,6 @@ main {
     align-items: center;
     justify-content: center;
     height: 100%;
-    border: 1px solid red;
   }
 
   .main-section {
@@ -65,6 +64,11 @@ main {
         padding: 0.9rem;
         width: 100%;
         transition: all 0.2s ease;
+
+        &:disabled {
+          opacity: 0.5;
+          pointer-events: none;
+        }
 
         &:hover {
           cursor: pointer;
